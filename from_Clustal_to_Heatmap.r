@@ -98,14 +98,14 @@ S <- match('SARS2',AL$nam)
 # Choose the order of the sequences in the heatmap.
 reordered = c('RaTG13','RShSTT182','RShSTT200',
               'RacCS203','PnMP789','ZC45','ZXC21',
-              'PnGX-P2V_2018','PnGX-P1E_2017')
+              'PnGX-P2V_2018','PnGX-P1E_2017','Rc-o319')
 
 
 # PLOT HEATMAP FOR DIFFERENT GENOMIC REGIONS
-plot_heatmap(AL,'SARS2_relatives.Whole_Genome.png',750, 1, nchar(AL$seq[S]), S, reordered, 50, 2000, 'Genome identity of SARS-CoV-2 relatives - Whole genome')
-plot_heatmap(AL,'SARS2_relatives.S_gene.png',100, 21635, 25490, S, reordered, 0, 500, 'Genome identity of SARS-CoV-2 relatives - S gene')
-plot_heatmap(AL,'SARS2_relatives.RBD.png',25, 22575, 23417, S, reordered, 0, 100, 'Genome identity of SARS-CoV-2 relatives - Receptor Binding Domain')
-plot_heatmap(AL,'SARS2_relatives.RBM.png',5, 22977, 23192, S, reordered, 0, 10, 'Genome identity of SARS-CoV-2 relatives - Receptor Binding Motif')
+plot_heatmap(AL,'SARS2_relatives.Whole_Genome.png',750, 1, nchar(AL$seq[S]), S, reordered, 40, 2000, 'Genome identity of SARS-CoV-2 relatives - Whole genome')
+plot_heatmap(AL,'SARS2_relatives.S_gene.png',100, 21677, 25532, S, reordered, 0, 500, 'Genome identity of SARS-CoV-2 relatives - S gene')
+plot_heatmap(AL,'SARS2_relatives.RBD.png',25, 22617, 23459, S, reordered, 0, 100, 'Genome identity of SARS-CoV-2 relatives - Receptor Binding Domain')
+plot_heatmap(AL,'SARS2_relatives.RBM.png',5, 23019, 23234, S, reordered, 0, 10, 'Genome identity of SARS-CoV-2 relatives - Receptor Binding Motif')
 
 # TURN OFF SHOWTEXT
 showtext_auto(FALSE)
